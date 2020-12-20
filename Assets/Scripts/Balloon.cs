@@ -33,6 +33,7 @@ public class Balloon : MonoBehaviour {
 
     private void OnMouseEnter() {
         if (gameObject.CompareTag("Target")) {
+            gameState.IncreaseScore();
             Destroy(gameObject);
         }
     }
