@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6572337317199107640}
   - component: {fileID: 5250581836713829607}
   - component: {fileID: 8050809053758091039}
+  - component: {fileID: -2549261099944756745}
   m_Layer: 0
   m_Name: Ballon Enemy
   m_TagString: Enemy
@@ -117,7 +118,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3ce858af7770dd47bcd3f831e020c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
   enemy: {fileID: 6870013558867436520}
+--- !u!60 &-2549261099944756745
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8050809053758091038}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.94, y: 2.26}
+    newSize: {x: 0.93, y: 2.27}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.06, y: -0.64}
+      - {x: -0.049999997, y: -0.42999998}
+      - {x: 0.08, y: -0.26}
+      - {x: 0.089999996, y: 0.01}
+      - {x: 0.24, y: 0.099999994}
+      - {x: 0.35, y: 0.22}
+      - {x: 0.44, y: 0.41}
+      - {x: 0.47, y: 0.5}
+      - {x: 0.47, y: 0.84999996}
+      - {x: 0.39, y: 0.98999995}
+      - {x: 0.19999999, y: 1.13}
+      - {x: -0.17, y: 1.13}
+      - {x: -0.28, y: 1.0799999}
+      - {x: -0.42999998, y: 0.91999996}
+      - {x: -0.47, y: 0.82}
+      - {x: -0.47, y: 0.47}
+      - {x: -0.45999998, y: 0.38}
+      - {x: -0.24411812, y: 0.09205896}
+      - {x: -0.02, y: -0.14999999}
+      - {x: -0.12, y: -0.42999998}
+      - {x: -0.12, y: -0.53}
+      - {x: -0.02, y: -0.72999996}
+      - {x: -0.13, y: -0.95}
+      - {x: -0.13, y: -1.04}
+      - {x: -0.07, y: -1.13}
+      - {x: 0.01, y: -1.13}
+      - {x: 0.03, y: -1.12}
+      - {x: -0.04, y: -0.98999995}
+      - {x: 0.049999997, y: -0.75}
 --- !u!1001 &8790893040397314575
 PrefabInstance:
   m_ObjectHideFlags: 0

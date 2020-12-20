@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class BalloonMovement : MonoBehaviour {
-    //[SerializeField] public float speed = 10f;
+public class Balloon : MonoBehaviour {
+    [SerializeField] public float speed = 2f;
     [SerializeField] private GameObject enemy;
     private GameState gameState;
     private Sprite target;
@@ -25,8 +25,17 @@ public class BalloonMovement : MonoBehaviour {
         if (transform.position.y > yUpperLimit) {
             Destroy(gameObject);
         }
-        _rigidbody2D.AddForce(Vector2.up * Time.deltaTime, ForceMode2D.Impulse);
+
+        transform.Translate(Vector2.up * Time.deltaTime * speed);
+        //_rigidbody2D.AddForce(Vector2.up * Time.deltaTime, ForceMode2D.Impulse);
+
     }
-    
-    
+
+    private void OnMouseEnter() {
+        Debug.Log("I m entered in object");
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+            Debug.Log("Trying to destroy");
+            Destroy(gameObject);
+        }
+    }
 }
