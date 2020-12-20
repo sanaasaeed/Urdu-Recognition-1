@@ -34,7 +34,13 @@ public class Balloon : MonoBehaviour {
     private void OnMouseEnter() {
         if (gameObject.CompareTag("Target")) {
             gameState.IncreaseScore();
+            AudioManager.CorrectSound.Play();
             Destroy(gameObject);
+        }
+
+        if (gameObject.CompareTag("Enemy")) {
+            gameState.DecreaseScore();
+            AudioManager.WrongSound.Play();
         }
     }
 }
