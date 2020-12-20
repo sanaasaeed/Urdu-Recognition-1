@@ -27,14 +27,12 @@ public class Balloon : MonoBehaviour {
         }
 
         transform.Translate(Vector2.up * Time.deltaTime * speed);
+        
         //_rigidbody2D.AddForce(Vector2.up * Time.deltaTime, ForceMode2D.Impulse);
-
     }
 
     private void OnMouseEnter() {
-        Debug.Log("I m entered in object");
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
-            Debug.Log("Trying to destroy");
+        if (gameObject.CompareTag("Target")) {
             Destroy(gameObject);
         }
     }
