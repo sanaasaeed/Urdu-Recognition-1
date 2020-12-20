@@ -13,9 +13,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balloon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Balloon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BalloonMovement.cs" />
       </list>
     </option>
@@ -59,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608454161450</updated>
-      <workItem from="1608454251916" duration="7331000" />
+      <workItem from="1608454251916" duration="9079000" />
     </task>
     <servers />
   </component>

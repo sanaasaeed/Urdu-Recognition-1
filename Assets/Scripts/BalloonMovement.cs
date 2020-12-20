@@ -14,7 +14,11 @@ public class BalloonMovement : MonoBehaviour {
     private void Start() {
         gameState = FindObjectOfType<GameState>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        enemy.GetComponent<SpriteRenderer>().sprite = gameState.letters[Random.Range(0, 37)];
+        if (gameObject.CompareTag($"Enemy")) {
+            gameState.letters.Remove(GameState.target);
+            enemy.GetComponent<SpriteRenderer>().sprite = gameState.letters[Random.Range(0, 37)];
+        }
+        
     }
 
     private void Update() {
