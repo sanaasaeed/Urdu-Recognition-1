@@ -8,6 +8,8 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BalloonMovement.cs" t="Include" />
+          <e p="GameState.cs" t="Include" />
+          <e p="SpawnManager.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
