@@ -8,11 +8,13 @@ public class Balloon : MonoBehaviour {
     [SerializeField] private GameObject enemy;
     private GameState gameState;
     private Sprite target;
+    private AudioManager audioManager;
     private Rigidbody2D _rigidbody2D;
     private float yUpperLimit = 8;
 
     private void Start() {
         gameState = FindObjectOfType<GameState>();
+        audioManager = FindObjectOfType<AudioManager>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         if (gameObject.CompareTag($"Enemy")) {
             gameState.letters.Remove(GameState.target);
@@ -34,13 +36,13 @@ public class Balloon : MonoBehaviour {
     private void OnMouseEnter() {
         if (gameObject.CompareTag("Target")) {
             gameState.IncreaseScore();
-            AudioManager.CorrectSound.Play();
+            audioManager.PlayCorrectAudio();
             Destroy(gameObject);
         }
 
         if (gameObject.CompareTag("Enemy")) {
             gameState.DecreaseScore();
-            AudioManager.WrongSound.Play();
+            audioManager.PlayWrongAudio();
         }
     }
 }

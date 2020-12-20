@@ -16,9 +16,10 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BalloonMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GoalsScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balloon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
       </list>
     </option>
   </component>
@@ -61,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608454161450</updated>
-      <workItem from="1608454251916" duration="15655000" />
+      <workItem from="1608454251916" duration="16544000" />
     </task>
     <servers />
   </component>

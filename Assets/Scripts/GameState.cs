@@ -28,6 +28,7 @@ public class GameState : MonoBehaviour {
     
     public void DecreaseScore() {
         score -= 10;
+        scoreText.text = score.ToString();
     }
 
     private void SetTargetAlphabet() {
