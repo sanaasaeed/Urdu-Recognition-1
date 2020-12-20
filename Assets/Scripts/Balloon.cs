@@ -29,8 +29,6 @@ public class Balloon : MonoBehaviour {
         }
 
         transform.Translate(Vector2.up * Time.deltaTime * speed);
-        
-        //_rigidbody2D.AddForce(Vector2.up * Time.deltaTime, ForceMode2D.Impulse);
     }
 
     private void OnMouseEnter() {
