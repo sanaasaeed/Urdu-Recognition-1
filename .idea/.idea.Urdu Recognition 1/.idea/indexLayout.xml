@@ -21,12 +21,12 @@
       <Path>ProjectSettings</Path>
     </explicitIncludes>
     <explicitExcludes>
+      <Path>.git</Path>
       <Path>.idea</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>Temp</Path>
       <Path>obj</Path>
-      <Path>urdu-recognition</Path>
     </explicitExcludes>
   </component>
 </project>

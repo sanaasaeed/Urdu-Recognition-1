@@ -1,18 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
-public class BalloonMovement : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class BalloonMovement : MonoBehaviour {
+    //[SerializeField] public float speed = 10f;
+    private Rigidbody2D _rigidbody2D;
+
+    private void Start() {
+        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Update() {
+        _rigidbody2D.AddForce(Vector2.up * Time.deltaTime, ForceMode2D.Impulse);
     }
 }
