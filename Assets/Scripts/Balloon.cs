@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class Balloon : MonoBehaviour {
@@ -20,10 +18,6 @@ public class Balloon : MonoBehaviour {
             gameState.letters.Remove(GameState.target);
             enemyLetter.GetComponent<SpriteRenderer>().sprite = gameState.letters[Random.Range(0, 37)];
         }
-        else if(gameObject.CompareTag($"Target")) {
-            
-        }
-        
     }
 
     private void Update() {

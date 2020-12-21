@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6572337317199107640}
   - component: {fileID: 5250581836713829607}
   - component: {fileID: 8050809053758091039}
-  - component: {fileID: -2549261099944756745}
+  - component: {fileID: 6030293963663068945}
   m_Layer: 0
   m_Name: Ballon Enemy
   m_TagString: Enemy
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   enemyLetter: {fileID: 6870013558867436520}
---- !u!60 &-2549261099944756745
+--- !u!60 &6030293963663068945
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,8 +145,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.06, y: -0.64}
-      - {x: -0.049999997, y: -0.42999998}
+    - - {x: 0.06, y: -0.095391035}
+      - {x: -0.13634041, y: -0.17429948}
       - {x: 0.08, y: -0.26}
       - {x: 0.089999996, y: 0.01}
       - {x: 0.24, y: 0.099999994}
@@ -162,18 +162,8 @@ PolygonCollider2D:
       - {x: -0.47, y: 0.82}
       - {x: -0.47, y: 0.47}
       - {x: -0.45999998, y: 0.38}
-      - {x: -0.24411812, y: 0.09205896}
-      - {x: -0.02, y: -0.14999999}
-      - {x: -0.12, y: -0.42999998}
-      - {x: -0.12, y: -0.53}
-      - {x: -0.02, y: -0.72999996}
-      - {x: -0.13, y: -0.95}
-      - {x: -0.13, y: -1.04}
-      - {x: -0.07, y: -1.13}
-      - {x: 0.01, y: -1.13}
-      - {x: 0.03, y: -1.12}
-      - {x: -0.04, y: -0.98999995}
-      - {x: 0.049999997, y: -0.75}
+      - {x: -0.26, y: 0.099999994}
+      - {x: -0.13, y: -0.14999999}
 --- !u!1001 &8790893040397314575
 PrefabInstance:
   m_ObjectHideFlags: 0
