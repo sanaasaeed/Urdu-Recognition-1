@@ -34,6 +34,5 @@ public class GameState : MonoBehaviour {
     public void SetTargetAlphabet() {
         target = letters[Random.Range(0, 37)];
         targetLetter.GetComponent<SpriteRenderer>().sprite = target;
-        Debug.Log(target + "I have setted");
     }
 }

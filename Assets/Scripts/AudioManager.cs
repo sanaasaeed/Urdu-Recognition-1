@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayWrongAudio() {
+        Debug.Log("Playing Audio....");
         wrongAudio.Play();
     }
 }
