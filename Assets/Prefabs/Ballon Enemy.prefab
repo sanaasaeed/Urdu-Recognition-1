@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8050809053758091038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6942744, y: -9.74, z: 0}
+  m_LocalPosition: {x: -0.6942744, y: -9.74, z: -2}
   m_LocalScale: {x: 2.2206657, y: 2.2206657, z: 2.2206657}
   m_Children:
   - {fileID: 2682649303232551666}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  enemy: {fileID: 6870013558867436520}
+  enemyLetter: {fileID: 6870013558867436520}
 --- !u!60 &-2549261099944756745
 PolygonCollider2D:
   m_ObjectHideFlags: 0

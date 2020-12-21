@@ -5,7 +5,7 @@ using Random = UnityEngine.Random;
 
 public class Balloon : MonoBehaviour {
     [SerializeField] public float speed = 2f;
-    [SerializeField] private GameObject enemy;
+    [SerializeField] private GameObject enemyLetter;
     private GameState gameState;
     private Sprite target;
     private AudioManager audioManager;
@@ -18,7 +18,10 @@ public class Balloon : MonoBehaviour {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         if (gameObject.CompareTag($"Enemy")) {
             gameState.letters.Remove(GameState.target);
-            enemy.GetComponent<SpriteRenderer>().sprite = gameState.letters[Random.Range(0, 37)];
+            enemyLetter.GetComponent<SpriteRenderer>().sprite = gameState.letters[Random.Range(0, 37)];
+        }
+        else if(gameObject.CompareTag($"Target")) {
+            
         }
         
     }
